@@ -21,7 +21,7 @@
 
 1. **Клонируйте этот репозиторий:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/coderxone/kaztok_client_app.git
    ```
 2. **Перейдите в папку проекта:**
    ```bash
