@@ -60,62 +60,6 @@ npm run ios
    * Для Android: измените имя в файле `android/app/src/main/res/values/strings.xml` в строке `app_name`.
    * Для iOS: измените параметр `Bundle Display Name` в настройках проекта внутри Xcode.
 
----
-
-## 🌐 Промышленное развертывание веб-версии (Production Deployment)
-
-Если вы хотите запустить веб-версию вашей видеоплатформы на удаленном сервере (VPS/VDS) в облаке для тысяч реальных пользователей, используйте один из следующих способов деплоя:
-
-### Способ 1: Развертывание через Nginx (Рекомендуется)
-Папка `dist` содержит чистый HTML/JS/CSS, поэтому Nginx обеспечит максимальную скорость работы медиа-интерфейса.
-
-1. Скопируйте папку `dist` на ваш сервер в директорию `/var/www/mytiktok`.
-2. Настройте конфигурацию Nginx (например, в файле `/etc/nginx/sites-available/mytiktok`):
-   ```nginx
-   server {
-       listen 80;
-       server_name my-own-tiktok.kz; # Укажите ваш зарегистрированный домен
-
-       root /var/www/mytiktok;
-       index index.html;
-
-       # Критически важно для корректной работы роутинга видео-платформы:
-       location / {
-           try_files uri uri/ /index.html;
-       }
-
-       # Кэширование статических медиа-ассетов обфусцированного кода
-       location /assets/ {
-           expires 1y;
-           add_header Cache-Control "public, no-transform";
-       }
-   }
-   ```
-3. Активируйте конфигурацию и перезапустите веб-сервер:
-   ```bash
-   sudo ln -s /etc/nginx/sites-available/mytiktok /etc/nginx/sites-enabled/
-   sudo systemctl restart nginx
-   ```
-
-### Способ 2: Развертывание через Docker
-Если вы предпочитаете контейнеризацию, создайте в корне проекта файл `Dockerfile`:
-```dockerfile
-FROM nginx:alpine
-COPY ./dist /usr/share/nginx/html
-RUN echo 'server { listen 80; location / { root /usr/share/nginx/html; index index.html; try_files uri uri/ /index.html; } }' > /etc/nginx/conf.d/default.conf
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-```
-Сборка и запуск контейнера одной командой:
-```bash
-docker build -t my-tiktok-client .
-docker run -d -p 80:80 my-tiktok-client
-```
-
----
-
-## ⚙️ Архитектура, Безопасность и Стриминг видео
-
 
 
 ## 📄 Условия использования и Лицензия
