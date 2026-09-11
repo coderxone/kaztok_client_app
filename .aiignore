@@ -1,0 +1,5 @@
+# Запрет для Claude Code, Cursor и других ИИ-инструментов
+*
+/dist
+/dist/**/*
+package.json
