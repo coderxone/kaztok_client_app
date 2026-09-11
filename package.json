@@ -1,0 +1,11 @@
+{
+  "name": "kaztok-web-client",
+  "version": "1.0.0",
+  "description": "Production build of Kaztok Web Client (Vite)",
+  "scripts": {
+    "start": "npx serve -s dist -l 3002"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

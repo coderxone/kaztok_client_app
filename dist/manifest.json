@@ -1,0 +1,39 @@
+{
+  "short_name": "Kaztok",
+  "name": "Kaztok",
+  "scope": "/",
+  "description": "Blockchain video platform.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "manifest_version": 2,
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://accounts.google.com/_/IdpIFrameHttp/cspreport/fine-allowlist https://accounts.google.com/_/IdpIFrameHttp/cspreport/fine-allowlist https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.IdpIFrameHttp.en_US.90QocFlViRY.es5.O/am=AAY/d=1/rs=AOaEmlEhirtSBUS4Q37kRtjtWwhoIgHx_Q/m=base https://apis.google.com/js/api.js https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+    "js": ["https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.fwXSHnIYz-4.O/m=client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_SvulQ5pP6FvvJyrQeIOJ4MStGTQ/cb=gapi.loaded_0?le=scs", "https://apis.google.com/js/api.js","https://apis.google.com/js/api.js","https://js.stripe.com/basil/stripe.js","https://www.paypal.com/sdk/js?client-id=AW3Q8YTzK6AblOoFcJ9kCI5aXq51N_1KeJh-SgbQ3a28knHp8TmFE4JPy6lnzTv9pLZaYiaBDrWJMQ1-&currency=USD&vault=true&intent=subscription"],
+    "matches": ["http://*/*", "https://*/*"]
+  }
+}
