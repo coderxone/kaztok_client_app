@@ -1,16 +1,16 @@
-# ⚠️ PROJECT DEPRECATED / ПОДДЕРЖКА ПРЕКРАЩЕНА ⚠️
+# ⚠️ kaztok — Open Source Version Terminated / Поддержка прекращена ⚠️
 
 **RU:** 
-Официальная open-source версия проекта **kaztok** завершила свой жизненный цикл и **больше не поддерживается**. Проект полностью переходит на коммерческую модель и закрытую архитектуру, работающую через **платный API**.
+Исходный код open-source версии проекта **kaztok** был удален. Проект официально прекратил свое существование в открытом виде и полностью перешел на закрытую коммерческую модель, работающую через **платный API**.
 
-* **Почему это произошло?** Для обеспечения стабильной работы инфраструктуры, высокой скорости обработки запросов и бесперебойной интеграции с новыми протоколами Telegram.
-* **Как получить доступ к платному API?** Актуальная документация, тарифные планы и личный кабинет доступны на нашем официальном сайте: [kaztok.kz](https://kaztok.kz).
-* **Остались вопросы или нужны кастомные условия?** Напишите нам напрямую на электронную почту: [info@kaztok.kz](mailto:info@kaztok.kz).
+* **Где найти новый продукт?** Все коммерческие решения, личный кабинет разработчика и актуальная документация находятся на официальном сайте: [kaztok.kz](https://kaztok.kz).
+* **Связаться с нами:** По вопросам приобретения API-ключей, интеграции или сотрудничества пишите на почту: [info@kaztok.kz](mailto:info@kaztok.kz).
 
 ---
 
 **EN:**
-The official open-source version of **kaztok** has reached its end-of-life and is **no longer maintained**. The project is migrating to a closed commercial model powered by a **paid API**.
+The source code for the open-source version of **kaztok** has been removed. The project is no longer public and has completely migrated to a proprietary commercial model powered by a **paid API**.
 
-* **How to migrate?** To access the new infrastructure and get your API keys, please visit our website: [kaztok.kz](https://kaztok.kz).
-* **Support & Commercial Inquiries:** Contact our team via email at [info@kaztok.kz](mailto:info@kaztok.kz).
+* **Official Website:** Access the cloud service, API keys, and new documentation at [kaztok.kz](https://kaztok.kz).
+* **Contact Us:** For commercial inquiries and API access, please email us at [info@kaztok.kz](mailto:info@kaztok.kz).
+
